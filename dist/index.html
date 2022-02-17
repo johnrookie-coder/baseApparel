@@ -14,53 +14,68 @@
 
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="font-serif text-grayishRed text-base">
-    <header class="h-full w-full">
-      <nav class="h-20 border flex items-center p-8">
+  <body class="font-serif text-grayishRed text-base gradient__bg">
+    <header class="h-screen w-full">
+      <nav class="h-20 flex items-center p-8 lg:hidden">
         <img src="./images/logo.svg" alt="company-logo" class="h-6" />
       </nav>
-      <!-- Wrapper -->
-      <div class="wrapper flex flex-col-reverse">
-        <div class="col-1 text-center py-10 px-4 text-desaturatedRed flex-1">
-          <h1
-            class="text-4xl uppercase font-bold mb-4 px-8 text-grayishRed tracking-xxl"
+
+      <div class="flex flex-col-reverse lg:flex-row lg:h-full lg:w-full">
+        <div
+          class="text-desaturatedRed text-center lg:text-left px-4 py-10 lg:py-18 lg:px-24 lg:w-7/12 lg:flex-col"
+        >
+          <img
+            src="./images/logo.svg"
+            alt="company-logo"
+            class="hidden h-10 w-32 lg:block"
+          />
+          <div
+            class="lg:flex lg:justify-center lg:items:center lg:flex-col h-full w-full"
           >
-            <span class="font-light text-desaturatedRed"> We're</span> coming
-            soon
-          </h1>
-          <p>
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
+            <h1
+              class="text-grayishRed tracking-xxl text-4xl lg:text-6xl uppercase font-bold mb-4 px-8 lg:px-0 lg:w-3/4"
+            >
+              <span class="font-light text-desaturatedRed"> We're </span> coming
+              soon
+            </h1>
+            <p class="lg:w-3/4">
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
 
-          <form action="#" class="text-sm mt-8">
-            <div class="form__wrapper h-14 relative">
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="Email Address"
-                class="border border-2 h-14 w-full rounded-full p-5 placeholder:p-5 focus:outline-none"
-              />
-              <span
-                ><img
-                  src="./images/icon-error.svg"
-                  alt="error-icon"
-                  class="absolute top-4 right-20 rounded-full mr-2"
-              /></span>
+            <form action="#" class="text-sm my-10 lg:w-3/4">
+              <div class="form__wrapper h-14 relative">
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  class="border border-2 border-desaturatedRed h-14 w-full rounded-full p-5 placeholder:p-5 focus:outline-none"
+                />
+                <span
+                  ><img
+                    src="./images/icon-error.svg"
+                    alt="error-icon"
+                    class="absolute top-4 right-20 rounded-full mr-3 hidden"
+                /></span>
 
-              <button class="btn">
-                <img src="./images/icon-arrow.svg" alt="arrow " />
-              </button>
-            </div>
-          </form>
+                <button class="btn">
+                  <img src="./images/icon-arrow.svg" alt="arrow " />
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="col-2 w-full">
+        <div class="w-full lg:w-5/12 lg:h-full">
           <img
             src="./images/hero-mobile.jpg"
             alt="hero-img"
-            class="w-full object-cover"
+            class="w-full object-cover lg:hidden"
+          />
+
+          <img
+            src="./images/hero-desktop.jpg"
+            alt="hero-img"
+            class="w-full h-full object-cover hidden lg:block"
           />
         </div>
       </div>
