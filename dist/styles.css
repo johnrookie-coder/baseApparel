@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 /*
 ! tailwindcss v3.0.22 | MIT License | https://tailwindcss.com
@@ -425,6 +425,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.tracking-xxl {
+  letter-spacing: 8px;
+}
+
 *, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -470,6 +474,186 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.btn{
+  position: absolute;
+  top: 0px;
+  display: flex;
+  height: 3.5rem;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 1rem;
+  background-image: linear-gradient(
+      to bottom,
+      hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%)
+    );
+  right: -0.5rem;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-4{
+  top: 1rem;
+}
+
+.right-20{
+  right: 5rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-8{
+  padding: 2rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .font-serif{
   font-family: Josefin Sans, serif;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.text-grayishRed{
+  --tw-text-opacity: 1;
+  color: hsl(0 6% 24% / var(--tw-text-opacity));
+}
+
+.text-desaturatedRed{
+  --tw-text-opacity: 1;
+  color: hsl(0 36% 70% / var(--tw-text-opacity));
+}
+
+.placeholder\:p-5::-moz-placeholder{
+  padding: 1.25rem;
+}
+
+.placeholder\:p-5:-ms-input-placeholder{
+  padding: 1.25rem;
+}
+
+.placeholder\:p-5::placeholder{
+  padding: 1.25rem;
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
