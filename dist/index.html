@@ -22,7 +22,7 @@
 
       <div class="flex flex-col-reverse lg:flex-row lg:h-full lg:w-full">
         <div
-          class="text-desaturatedRed text-center lg:text-left px-4 py-10 lg:py-18 lg:px-24 lg:w-7/12 lg:flex-col"
+          class="text-desaturatedRed text-center lg:text-left px-4 py-10 md:py-24 md:px-12 lg:py-18 lg:px-24 lg:w-7/12 lg:flex-col"
         >
           <img
             src="./images/logo.svg"
@@ -30,27 +30,23 @@
             class="hidden h-10 w-32 lg:block"
           />
           <div
-            class="lg:flex lg:justify-center lg:items:center lg:flex-col h-full w-full"
+            class="lg:flex md:justify-center lg:items:center lg:flex-col h-full w-full"
           >
             <h1
-              class="text-grayishRed tracking-xxl text-4xl lg:text-6xl uppercase font-bold mb-4 px-8 lg:px-0 lg:w-3/4"
+              class="text-grayishRed tracking-xxl text-4xl md:text-5xl lg:text-6xl uppercase font-bold my-4 px-8 lg:px-0 lg:w-3/4"
             >
               <span class="font-light text-desaturatedRed"> We're </span> coming
               soon
             </h1>
-            <p class="lg:w-3/4">
+            <p class="md:px-12 lg:px-1 lg:w-3/4">
               Hello fellow shoppers! We're currently building our new fashion
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
 
-            <form action="#" class="text-sm my-10 lg:w-3/4">
+            <form action="#" class="text-base my-10 md:px-12 lg:px-0 lg:w-3/4">
               <div class="form__wrapper h-14 relative">
-                <input
-                  type="text"
-                  placeholder="Email Address"
-                  class="border border-2 border-desaturatedRed h-14 w-full rounded-full p-5 placeholder:p-5 focus:outline-none"
-                />
+                <input type="text" placeholder="Email Address" class="inputs" />
                 <span
                   ><img
                     src="./images/icon-error.svg"
@@ -58,7 +54,7 @@
                     class="absolute top-4 right-20 rounded-full mr-3 hidden"
                 /></span>
 
-                <button class="btn">
+                <button class="btn hover:btn--hover">
                   <img src="./images/icon-arrow.svg" alt="arrow " />
                 </button>
               </div>
