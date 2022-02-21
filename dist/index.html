@@ -46,13 +46,22 @@
 
             <form action="#" class="text-base my-10 md:px-12 lg:px-0 lg:w-3/4">
               <div class="form__wrapper h-14 relative">
-                <input type="text" placeholder="Email Address" class="inputs" />
-                <span
-                  ><img
-                    src="./images/icon-error.svg"
-                    alt="error-icon"
-                    class="absolute top-4 right-20 rounded-full mr-3 hidden"
-                /></span>
+                <div class="input">
+                  <input
+                    type="text"
+                    placeholder="Email Address"
+                    class="inputs"
+                  />
+                  <span
+                    ><img
+                      src="./images/icon-error.svg"
+                      alt="error-icon"
+                      class="absolute top-4 right-24 lg:right-28 md:right-40 rounded-full mr-3 hidden error-icon"
+                  /></span>
+                  <p class="text-softRed mt-3 ml-5 text-left msg hidden">
+                    Please provide a valid email
+                  </p>
+                </div>
 
                 <button class="btn hover:btn--hover">
                   <img src="./images/icon-arrow.svg" alt="arrow " />
@@ -76,5 +85,6 @@
         </div>
       </div>
     </header>
+    <script src="scripts.js"></script>
   </body>
 </html>

@@ -43,5 +43,10 @@
       hsl(0, 80%, 80%),
       hsl(0, 74%, 70%)
     );
+    transform: scale(1.1);
+  }
+
+  .btn--err {
+    @apply border-softRed border-2;
   }
 }

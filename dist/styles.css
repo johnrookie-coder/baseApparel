@@ -533,8 +533,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 1rem;
 }
 
-.right-20{
-  right: 5rem;
+.right-24{
+  right: 6rem;
 }
 
 .my-4{
@@ -549,6 +549,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-3{
   margin-right: 0.75rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
 }
 
 .flex{
@@ -627,6 +635,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -667,6 +679,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(0 36% 70% / var(--tw-text-opacity));
 }
 
+.text-softRed{
+  --tw-text-opacity: 1;
+  color: hsl(0 93% 68% / var(--tw-text-opacity));
+}
+
 .gradient__bg {
   background-image: linear-gradient(
       to bottom,
@@ -675,15 +692,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     );
 }
 
+.btn--err{
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: hsl(0 93% 68% / var(--tw-border-opacity));
+}
+
 .hover\:btn--hover:hover {
   background-image: linear-gradient(
       to right,
       hsl(0, 80%, 80%),
       hsl(0, 74%, 70%)
     );
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px){
+  .md\:right-40{
+    right: 10rem;
+  }
+
   .md\:justify-center{
     justify-content: center;
   }
@@ -705,6 +733,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px){
+  .lg\:right-28{
+    right: 7rem;
+  }
+
   .lg\:block{
     display: block;
   }
